@@ -1,18 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors */
+  /* Brand colors */
   --color-primary:       hsl(230, 84%, 55%);
   --color-primary-dark:  hsl(230, 84%, 42%);
   --color-primary-light: hsl(230, 84%, 70%);
   --color-accent:        hsl(190, 95%, 50%);
   --color-accent-dark:   hsl(190, 95%, 38%);
-  --color-dark:          #0a0a0f;
-  --color-dark-surface:  #12121a;
-  --color-dark-card:     #1a1a2e;
+
+  /* Dark palette — used for hero, stats, header, footer */
+  --color-dark:          hsl(222, 47%, 6%);
+  --color-dark-surface:  hsl(222, 47%, 11%);
+  --color-dark-card:     hsl(222, 47%, 14%);
+
+  /* Light palette — page body, sections */
+  --color-bg:            hsl(220, 20%, 97%);
+  --color-bg-alt:        hsl(220, 14%, 94%);
+  --color-fore:          hsl(222, 47%, 11%);
+  --color-muted-fore:    hsl(220, 9%, 46%);
+  --color-border-light:  hsl(220, 13%, 88%);
+
+  /* Legacy aliases kept for Header/Footer */
   --color-text:          #f0f0f5;
   --color-muted:         #8a8a9a;
-  --color-dim:           #6a6a7a;
   --color-border:        rgba(255, 255, 255, 0.08);
   --color-glass:         rgba(255, 255, 255, 0.04);
   --color-white:         #ffffff;
@@ -24,7 +34,8 @@
 
   /* Shadows */
   --shadow-primary: 0 8px 32px rgba(59, 91, 219, 0.28);
-  --shadow-card:    0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-card:    0 4px 24px -4px rgba(17, 24, 39, 0.08);
+  --shadow-card-hover: 0 20px 50px -12px rgba(17, 24, 39, 0.18);
   --shadow-large:   0 20px 60px rgba(0, 0, 0, 0.4);
   --shadow-glow:    0 0 40px rgba(59, 91, 219, 0.2);
 
@@ -40,23 +51,33 @@ html {
 }
 
 body {
-  background-color: #0a0a0f;
-  color: #f0f0f5;
+  background-color: hsl(220, 20%, 97%);
+  color: hsl(222, 47%, 11%);
   font-family: var(--font-montserrat), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(90deg, hsl(230, 84%, 70%), hsl(190, 95%, 60%));
+  background: linear-gradient(135deg, hsl(230, 84%, 55%), hsl(190, 95%, 50%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Glass morphism card utility */
+/* Glass card — light theme */
 .glass-card {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(210, 213, 224, 0.5);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 24px -4px rgba(17, 24, 39, 0.08);
+}
+
+/* Glass card — dark variant (hero / stats areas) */
+.glass-card-dark {
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);

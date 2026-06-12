@@ -2,7 +2,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 type ButtonProps = {
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "outlineWhite";
   size?: "sm" | "md" | "lg";
   arrow?: boolean;
   href?: string;
@@ -22,7 +22,9 @@ const variants = {
   primary:
     "bg-gradient-to-r from-primary to-accent text-white shadow-md hover:shadow-primary/40 hover:scale-[1.03]",
   outline:
-    "border border-white/20 text-white/80 hover:text-white hover:border-primary/60 hover:bg-primary/10 bg-transparent",
+    "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-colors duration-300",
+  outlineWhite:
+    "border border-white/30 text-white bg-transparent hover:bg-white/10 hover:border-white/50 transition-colors duration-300",
 };
 
 const sizes = {

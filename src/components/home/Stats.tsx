@@ -52,12 +52,18 @@ function Counter({ target, suffix, isFloat }: StatItem) {
 
 export default function Stats() {
   return (
-    <section className="relative overflow-hidden py-20 lg:py-28">
-      {/* Background */}
+    <section
+      className="relative overflow-hidden py-20 lg:py-28"
+      style={{
+        background: "linear-gradient(135deg, hsl(222,47%,6%) 0%, hsl(222,47%,11%) 100%)",
+      }}
+    >
+      {/* Glow overlays */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] rounded-full opacity-20"
-          style={{ background: "radial-gradient(ellipse, rgba(59,91,219,0.2) 0%, transparent 70%)" }} />
+        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-10"
+          style={{ background: "radial-gradient(circle, rgba(59,91,219,0.5) 0%, transparent 70%)", filter: "blur(48px)" }} />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full opacity-10"
+          style={{ background: "radial-gradient(circle, rgba(2,214,245,0.5) 0%, transparent 70%)", filter: "blur(48px)" }} />
       </div>
 
       <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,7 +74,7 @@ export default function Stats() {
                 <div className="text-4xl sm:text-5xl font-extrabold gradient-text leading-none">
                   <Counter {...stat} />
                 </div>
-                <p className="text-sm font-semibold text-[#8a8a9a] tracking-wide uppercase">
+                <p className="text-sm font-semibold text-white/70 tracking-wide uppercase">
                   {stat.label}
                 </p>
               </div>

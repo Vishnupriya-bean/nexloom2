@@ -27,21 +27,27 @@ function SparkleIcon() {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[92vh] flex items-center">
-      {/* Background glow blobs */}
+    <section
+      className="relative overflow-hidden min-h-[92vh] flex items-center"
+      style={{
+        background:
+          "linear-gradient(135deg, hsl(222,47%,6%) 0%, hsl(230,40%,14%) 50%, hsl(222,35%,18%) 100%)",
+      }}
+    >
+      {/* Radial glow overlays */}
       <div className="pointer-events-none absolute inset-0" aria-hidden>
         <div
-          className="absolute -top-48 -left-48 w-[700px] h-[700px] rounded-full opacity-60"
+          className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full opacity-30"
           style={{
             background:
-              "radial-gradient(circle, rgba(59,91,219,0.18) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(59,91,219,0.25) 0%, transparent 70%)",
           }}
         />
         <div
-          className="absolute -bottom-48 -right-48 w-[600px] h-[600px] rounded-full opacity-50"
+          className="absolute bottom-0 right-1/4 w-[500px] h-[500px] rounded-full opacity-20"
           style={{
             background:
-              "radial-gradient(circle, rgba(2,214,245,0.12) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(2,214,245,0.15) 0%, transparent 70%)",
           }}
         />
       </div>
@@ -82,7 +88,7 @@ export default function Hero() {
               <Button href={heroContent.ctaPrimary.href} size="lg" arrow>
                 {heroContent.ctaPrimary.label}
               </Button>
-              <Button href={heroContent.ctaSecondary.href} variant="outline" size="lg">
+              <Button href={heroContent.ctaSecondary.href} variant="outlineWhite" size="lg">
                 {heroContent.ctaSecondary.label}
               </Button>
             </div>

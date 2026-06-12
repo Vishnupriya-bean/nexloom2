@@ -20,13 +20,11 @@ function CheckIcon() {
 }
 
 const VALUE_ICONS: React.ReactNode[] = [
-  // Technical Excellence — lightbulb
   <svg key="excellence" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
     fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
     <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
     <path d="M9 18h6" /><path d="M10 22h4" />
   </svg>,
-  // Partnership Mindset — users
   <svg key="partnership" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
     fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -34,12 +32,10 @@ const VALUE_ICONS: React.ReactNode[] = [
     <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
     <path d="M16 3.13a4 4 0 0 1 0 7.75" />
   </svg>,
-  // Results-Driven — target
   <svg key="results" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
     fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
     <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" />
   </svg>,
-  // Continuous Improvement — refresh
   <svg key="improvement" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
     fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
     <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
@@ -52,12 +48,13 @@ const VALUE_ICONS: React.ReactNode[] = [
 function ValueCard({ item, icon, delay }: { item: ValueItem; icon: React.ReactNode; delay: number }) {
   return (
     <RevealOnScroll delay={delay}>
-      <GlassCard className="p-6 h-full flex flex-col gap-4">
-        <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+      <GlassCard className="p-8 h-full flex flex-col gap-4 hover:-translate-y-2 transition-transform duration-300">
+        {/* Gradient icon */}
+        <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white shadow-md transition-transform duration-300 hover:scale-110">
           {icon}
         </div>
-        <h3 className="text-base font-bold text-[#f0f0f5]">{item.title}</h3>
-        <p className="text-sm text-[#8a8a9a] leading-relaxed">{item.description}</p>
+        <h3 className="text-xl font-bold text-fore">{item.title}</h3>
+        <p className="text-[0.9375rem] text-muted-fore leading-relaxed">{item.description}</p>
       </GlassCard>
     </RevealOnScroll>
   );
@@ -69,45 +66,40 @@ export default function WhyNexloom() {
   return (
     <>
       {/* ── About Nexloom ─────────────────────────────────────────────── */}
-      <SectionWrapper id="about" className="relative overflow-hidden">
-        {/* Decorative glows */}
-        <div className="pointer-events-none absolute inset-0" aria-hidden>
-          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full opacity-30"
-            style={{ background: "radial-gradient(circle, rgba(59,91,219,0.15) 0%, transparent 70%)" }} />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full opacity-20"
-            style={{ background: "radial-gradient(circle, rgba(2,214,245,0.12) 0%, transparent 70%)" }} />
-        </div>
-
-        <div className="relative max-w-2xl mx-auto text-center flex flex-col items-center gap-5">
+      <SectionWrapper id="about">
+        <div className="max-w-2xl mx-auto text-center flex flex-col items-center gap-5">
           <RevealOnScroll>
             <SectionLabel>{c.aboutLabel}</SectionLabel>
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.1}>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#f0f0f5] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-fore tracking-tight">
               {c.aboutHeading}{" "}
               <GradientText>{c.aboutHeadingGradient}</GradientText>
             </h2>
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.2}>
-            <p className="text-[#8a8a9a] text-lg leading-relaxed">{c.aboutText}</p>
+            <p className="text-muted-fore text-lg leading-relaxed">{c.aboutText}</p>
           </RevealOnScroll>
 
-          {/* Capability list */}
+          {/* Capability grid */}
           <RevealOnScroll delay={0.3}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full text-left mt-2">
               {c.capabilities.map((cap) => (
-                <div key={cap} className="flex items-center gap-3">
+                <div
+                  key={cap}
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl bg-[hsl(220,14%,94%)]/50 border border-[hsl(220,13%,88%)]/50"
+                >
                   <CheckIcon />
-                  <span className="text-sm font-medium text-[#f0f0f5]/80">{cap}</span>
+                  <span className="text-sm font-medium text-fore">{cap}</span>
                 </div>
               ))}
             </div>
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.4}>
-            <Button href={c.aboutCta.href} variant="outline" size="lg" arrow className="mt-2">
+            <Button href={c.aboutCta.href} size="lg" arrow className="mt-2">
               {c.aboutCta.label}
             </Button>
           </RevealOnScroll>
@@ -115,19 +107,19 @@ export default function WhyNexloom() {
       </SectionWrapper>
 
       {/* ── Our Values ────────────────────────────────────────────────── */}
-      <SectionWrapper className="bg-[#12121a]/40">
+      <SectionWrapper className="bg-[hsl(220,14%,94%)]/30">
         <div className="text-center mb-12 flex flex-col items-center gap-4">
           <RevealOnScroll>
             <SectionLabel>{c.valuesLabel}</SectionLabel>
           </RevealOnScroll>
           <RevealOnScroll delay={0.1}>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#f0f0f5] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-fore tracking-tight">
               {c.valuesHeading}
             </h2>
           </RevealOnScroll>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {c.values.map((val, i) => (
             <ValueCard key={val.title} item={val} icon={VALUE_ICONS[i]} delay={i * 0.1} />
           ))}
