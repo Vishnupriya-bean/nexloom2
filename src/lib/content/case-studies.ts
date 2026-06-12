@@ -1,0 +1,141 @@
+export type CaseStudy = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  image: string;
+  problem: string;
+  solution: string;
+  results: string[];
+  serviceHref: string;
+  serviceLabel: string;
+};
+
+export const caseStudies: CaseStudy[] = [
+  {
+    slug: "saas-platform-fintech-startup",
+    title: "Building a Scalable SaaS Platform for a Fintech Startup",
+    excerpt:
+      "How we helped a fintech startup launch their multi-tenant SaaS platform in 4 months, achieving 10,000 active users within the first quarter.",
+    category: "Engineering & Product",
+    image: "/case-studies/fintech.jpg",
+    problem:
+      "A fast-growing fintech startup needed to build a multi-tenant SaaS platform from scratch. Their existing prototype was built on a monolithic architecture that couldn't handle concurrent users, lacked proper authentication, and had no billing integration. They needed to go from prototype to production in under 5 months to secure their next funding round.",
+    solution:
+      "Nexloom deployed a full-stack engineering team that redesigned the architecture using microservices with Node.js and React. We implemented multi-tenant data isolation, integrated Stripe for subscription billing, built role-based access control, and set up automated CI/CD pipelines. The team delivered iterative releases every two weeks with comprehensive testing.",
+    results: [
+      "Launched production platform in 4 months",
+      "10,000+ active users in first quarter",
+      "99.9% uptime since launch",
+      "60% reduction in infrastructure costs vs. original architecture",
+    ],
+    serviceHref: "/services/engineering-product",
+    serviceLabel: "Explore Engineering & Product Services",
+  },
+  {
+    slug: "cloud-migration-healthcare",
+    title: "Enterprise Cloud Migration for Healthcare Provider",
+    excerpt:
+      "Migrating a healthcare provider's legacy on-premise infrastructure to AWS while maintaining HIPAA compliance and zero downtime.",
+    category: "Cloud & DevOps",
+    image: "/case-studies/healthcare.jpg",
+    problem:
+      "A regional healthcare provider was running critical patient management systems on aging on-premise servers. They faced escalating maintenance costs, performance bottlenecks during peak hours, and compliance risks. They needed to migrate to the cloud without any downtime or data loss, while maintaining strict HIPAA compliance throughout the process.",
+    solution:
+      "Nexloom designed a phased cloud migration strategy to AWS. We implemented HIPAA-compliant VPC architecture, encrypted data at rest and in transit, set up automated backups, and created a disaster recovery plan. The migration used a blue-green deployment strategy to ensure zero downtime. We also implemented comprehensive monitoring and alerting with PagerDuty integration.",
+    results: [
+      "Zero downtime during migration",
+      "Full HIPAA compliance maintained",
+      "45% reduction in infrastructure costs",
+      "3x improvement in application response times",
+    ],
+    serviceHref: "/services/cloud-devops",
+    serviceLabel: "Explore Cloud & DevOps Services",
+  },
+  {
+    slug: "ai-customer-support-ecommerce",
+    title: "AI-Powered Customer Support for E-Commerce Platform",
+    excerpt:
+      "Deploying intelligent AI agents that handle 70% of customer inquiries automatically, reducing support costs by 55%.",
+    category: "AI & Automation",
+    image: "/case-studies/ecommerce.jpg",
+    problem:
+      "A growing e-commerce platform was struggling with customer support scalability. Their team of 25 support agents couldn't keep up with increasing ticket volumes, response times were averaging 4+ hours, and customer satisfaction scores were declining. Hiring more agents wasn't financially viable given their growth stage.",
+    solution:
+      "Nexloom built a custom AI agent system using GPT-4 and RAG architecture trained on the company's product catalog, policies, and historical support conversations. The system handles order tracking, returns, product questions, and escalates complex issues to human agents with full context. We integrated it with their existing Zendesk workflow and added real-time sentiment analysis.",
+    results: [
+      "70% of inquiries resolved automatically",
+      "Average response time reduced from 4 hours to 30 seconds",
+      "Customer satisfaction increased by 35%",
+      "55% reduction in support operational costs",
+    ],
+    serviceHref: "/services/ai-automation",
+    serviceLabel: "Explore AI & Automation Services",
+  },
+  {
+    slug: "data-pipeline-retail-analytics",
+    title: "Real-Time Data Pipeline for Retail Analytics",
+    excerpt:
+      "Building a real-time data pipeline that unified 12 data sources and enabled data-driven decision making across 200+ retail locations.",
+    category: "Integrations & Growth",
+    image: "/case-studies/retail-analytics.jpg",
+    problem:
+      "A national retail chain had data scattered across 12 different systems—POS, inventory, CRM, marketing platforms, and more. Their analysts spent 80% of their time manually aggregating data in spreadsheets. Leadership lacked real-time visibility into sales performance, inventory levels, and marketing effectiveness across their 200+ locations.",
+    solution:
+      "Nexloom designed and built a real-time data pipeline using Apache Kafka for streaming, dbt for transformations, and Snowflake as the data warehouse. We created custom connectors for all 12 source systems, implemented data quality checks, and built executive dashboards in Looker with drill-down capabilities by region, store, and product category.",
+    results: [
+      "Unified 12 data sources into single platform",
+      "Real-time analytics across 200+ locations",
+      "Analyst productivity increased by 300%",
+      "Data-driven decisions led to 18% revenue increase",
+    ],
+    serviceHref: "/services/integrations-growth",
+    serviceLabel: "Explore Integrations & Growth Services",
+  },
+  {
+    slug: "mobile-app-logistics",
+    title: "Cross-Platform Mobile App for Logistics Company",
+    excerpt:
+      "Delivering a driver-facing mobile app with real-time tracking, route optimization, and proof of delivery for a logistics fleet of 500+ vehicles.",
+    category: "Engineering & Product",
+    image: "/case-studies/logistics.jpg",
+    problem:
+      "A logistics company managing 500+ delivery vehicles relied on phone calls and paper forms for dispatch, tracking, and proof of delivery. This led to frequent miscommunication, lost delivery confirmations, and an inability to optimize routes. They needed a mobile solution that worked reliably in areas with poor connectivity.",
+    solution:
+      "Nexloom built a cross-platform mobile app using React Native with offline-first architecture. The app features real-time GPS tracking, route optimization using Google Maps APIs, digital proof of delivery with photo capture and e-signatures, and a dispatch dashboard for fleet managers. We implemented background syncing for areas with intermittent connectivity.",
+    results: [
+      "98% driver adoption within 2 months",
+      "25% reduction in fuel costs through route optimization",
+      "Zero lost delivery confirmations",
+      "40% faster dispatch-to-delivery times",
+    ],
+    serviceHref: "/services/engineering-product",
+    serviceLabel: "Explore Engineering & Product Services",
+  },
+  {
+    slug: "devops-pipeline-saas-company",
+    title: "DevOps Transformation for Growing SaaS Company",
+    excerpt:
+      "Transforming a manual deployment process into a fully automated CI/CD pipeline, reducing deployment time from 2 days to 15 minutes.",
+    category: "Cloud & DevOps",
+    image: "/case-studies/devops-saas.jpg",
+    problem:
+      "A B2B SaaS company with 50 engineers was deploying manually using SSH and scripts. Deployments took 2 days, frequently caused downtime, and required a dedicated 'deployment team.' Fear of breaking production led to monthly release cycles, creating a massive backlog of features and bug fixes waiting to ship.",
+    solution:
+      "Nexloom implemented a comprehensive DevOps transformation: GitHub Actions for CI/CD, Docker containers for consistent environments, Kubernetes for orchestration, Terraform for infrastructure as code, and ArgoCD for GitOps deployments. We established staging environments, automated testing gates, canary deployments, and rollback procedures.",
+    results: [
+      "Deployment time reduced from 2 days to 15 minutes",
+      "Release frequency increased from monthly to daily",
+      "Zero-downtime deployments achieved",
+      "Developer productivity increased by 40%",
+    ],
+    serviceHref: "/services/cloud-devops",
+    serviceLabel: "Explore Cloud & DevOps Services",
+  },
+];
+
+export const CASE_STUDY_SLUGS = caseStudies.map((c) => c.slug);
+
+export function getCaseStudy(slug: string): CaseStudy | undefined {
+  return caseStudies.find((c) => c.slug === slug);
+}
