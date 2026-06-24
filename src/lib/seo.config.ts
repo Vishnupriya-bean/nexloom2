@@ -38,11 +38,11 @@ export const seoConfig = {
     alternates: { canonical: `${BASE_URL}/` },
     robots: "index, follow",
     openGraph: og(
-      "Nexloom | Senior-Led Software Engineering",
+      "Nexloom | We Build Software That Ships",
       "Production-grade software built by senior engineers — cloud, AI, full-stack, and integrations.",
       `${BASE_URL}/`
     ),
-    twitter: tw("Nexloom | Senior-Led Software Engineering"),
+    twitter: tw("Nexloom | We Build Software That Ships"),
   } satisfies Metadata,
 
   about: {

@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nexloom | Senior-Led Software Engineering",
+    default: "Nexloom | We Build Software That Ships",
     template: "%s | Nexloom",
   },
   description:
