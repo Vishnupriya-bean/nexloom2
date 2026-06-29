@@ -17,11 +17,12 @@ export type ServiceItem = {
   image: string;
   imageAlt: string;
   title: string;
+  headings: string;
   description: string;
   outcome: string;
   subServices: string[];
   ctaLabel: string;
-};
+}
 
 export const servicesContent = {
   sectionLabel: "You don't have a technology problem. You have a",

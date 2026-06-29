@@ -2,10 +2,9 @@
 
 "use client";
 
-import SectionWrapper from "@/components/ui/SectionWrapper";
+
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 import { servicesContent } from "@/lib/content/home";
-
 export default function Services() {
   return (
     <>
