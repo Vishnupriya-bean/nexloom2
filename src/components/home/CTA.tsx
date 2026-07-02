@@ -106,6 +106,8 @@ export default function CTA() {
           <span className="mx-2 opacity-50">·</span>
           {c.contactInfo.hours}
         </p>
+
+        
       </RevealOnScroll>
     )}
   </div>
