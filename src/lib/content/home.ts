@@ -5,7 +5,7 @@ export const heroContent = {
   headline: "Your business outgrew its tools.",
   headlineGradient: "We fix that.",
   subtitle:"We help established small and mid-sized businesses untangle the software, automation, and systems slowing them down. A team that finds the real problem, decides the right move, and sees it through.",
-  
+
   ctaPrimary: { label: "Book a Call", href: "/book-a-call" },
   ctaSecondary: { label: "View Case Studies", href: "/case-studies" },
   trustedLabel: "A short call, no pitch. Bring your most annoying technology problem.",
@@ -104,7 +104,7 @@ export type ValueItem = {
 };
 
 export const whyNexloomContent = {
-  aboutLabel: "The kind of problems we solve",
+  aboutLabel: " the  kind of problems we solve",
   aboutHeading: "",
   aboutHeadingGradient: "",
   aboutText:

@@ -67,7 +67,7 @@ export default function WhyNexloom() {
   return (
     <>
       {/* ── About Nexloom / Problems we solve ───────────────────────── */}
-      <SectionWrapper id="about" className="bg-[hsl(222,47%,11%)]">
+      <SectionWrapper id="about" className="bg-[#0e1530]">
   <div className="max-w-6xl mx-auto flex flex-col gap-6 lg:ml-40">
 
     {/* Heading — now pulling from aboutLabel, matching the screenshot */}
@@ -98,7 +98,7 @@ export default function WhyNexloom() {
       </div>
     </RevealOnScroll>
 
-   
+
   </div>
 </SectionWrapper>
 
@@ -123,7 +123,7 @@ export default function WhyNexloom() {
       </SectionWrapper> */}
 
       {/* ── About (mission/approach) ───────────────────────────────────── */}
-      <SectionWrapper id="about-mission" className="bg-[hsl(222,47%,11%)] pb-6 lg:pb-10 ">
+      <SectionWrapper id="about-mission" className="bg-[#0b1020] pb-6 lg:pb-10 ">
         <div className="max-w-2xl  mx-auto flex flex-col gap-6 lg:ml-40">
           <RevealOnScroll>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">

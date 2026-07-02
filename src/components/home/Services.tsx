@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <>
       {/* ── Section 1: Problem statement ── */}
-      <section className="bg-[#0a0f1e] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-2">
+      <section className="bg-[#0e1530]    sm:py-6 lg:py-25 sg:py-6 px-4  sm:px-3 lg:px-2">
   <div className="max-w-[1400px] mx-auto">
     <div className="max-w-3xl lg:ml-48">
       <RevealOnScroll>
@@ -34,7 +34,7 @@ export default function Services() {
   </div>
 </section>
       {/* ── Section 2: How we work ── */}
-      <section className="bg-[hsl(222,47%,7%)] py-16 sm:py-20 lg:py-20 px-5 sm:px-10 lg:px-20">
+      <section className="bg-[#0b1020] py-16 sm:py-20 lg:py-20 px-5 sm:px-10 lg:px-20">
   <div className="max-w-6xl mx-auto lg:ml-42">
     {/* Heading */}
     <RevealOnScroll>

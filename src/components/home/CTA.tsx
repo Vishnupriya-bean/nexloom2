@@ -40,7 +40,7 @@ export default function CTA() {
   const c = ctaContent;
 
   return (
-    <SectionWrapper className="bg-[hsl(222,47%,11%)] pt-6 lg:pt-10" id="contact">
+    <SectionWrapper className="bg-[#0b1020] pt-6 lg:pt-10" id="contact">
 
 
 

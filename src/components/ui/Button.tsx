@@ -20,7 +20,7 @@ const base =
 
 const variants = {
   primary:
-    "bg-gradient-to-r from-primary to-accent text-white shadow-md hover:shadow-primary/40 hover:scale-[1.03]",
+    "bg-gradient-to-r from-primary to-accent text-white shadow-md hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300",
   outline:
     "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-colors duration-300",
   outlineWhite:

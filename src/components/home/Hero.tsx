@@ -28,7 +28,7 @@ function SparkleIcon() {
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden min-h-[100vh] sm:min-h-[92vh] flex items-center bg-[#040915]"
+      className="relative overflow-hidden min-h-[100vh] lg:h-[92vh] sm:min-h-[92vh] flex items-center   bg-[#0b1020]"
       style={{
         background:
           "",
@@ -44,7 +44,7 @@ export default function Hero() {
           }}
         />
         <div
-          className="absolute bottom-0 right-1/4 w-[250px] sm:w-[375px] lg:w-[500px] h-[250px] sm:h-[375px] lg:h-[500px] rounded-full opacity-20"
+          className="absolute bottom-0  right-1/4 w-[250px] sm:w-[375px] lg:w-[500px] h-[250px] sm:h-[375px] lg:h-[500px] rounded-full opacity-20"
           style={{
             background:
               "radial-gradient(circle, rgba(2,214,245,0.15) 0%, transparent 70%)",
@@ -52,7 +52,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+      <div className="relative w-full max-w-[1400px] border-b border-white/10 mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
         <div className="max-w-3xl mx-auto text-center">
 
           {/* Gradient-border pill */}
@@ -81,7 +81,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <RevealOnScroll delay={0.2}>
-            <p className="mx-auto max-w-[740px] px-2 sm:px-0 mb-8 sm:mb-10 text-center text-base sm:text-lg lg:text-xl leading-[1.6] text-[#8a8a9a]">
+            <p className="mx-auto max-w-[740px] px-2 sm:px-0 mb-8 sm:mb-10 text-center text-base sm:text-lg lg:text-xl leading-[1.6] text-sky-50">
               {heroContent.subtitle}
             </p>
           </RevealOnScroll>
