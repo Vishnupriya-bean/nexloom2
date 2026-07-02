@@ -62,7 +62,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-[76px]">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 group ml-[95px]" onClick={() => setMobileOpen(false)}>
+            <Link href="/" className="flex items-center gap-2 group  ml-0 lg:ml-[95px]" onClick={() => setMobileOpen(false)}>
               <span className="text-2xl font-extrabold text-white tracking-tight">
                 Nex<span className="gradient-text">loom</span>
               </span>
@@ -92,6 +92,8 @@ export default function Header() {
                 </svg>
               </Link>
             </div>
+
+
 
             {/* Mobile toggle */}
             <button

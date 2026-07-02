@@ -9,9 +9,9 @@ export default function Services() {
   return (
     <>
       {/* ── Section 1: Problem statement ── */}
-      <section className="bg-[#0a0f1e] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-[#0a0f1e] py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-2">
   <div className="max-w-[1400px] mx-auto">
-    <div className="max-w-3xl lg:ml-60">
+    <div className="max-w-3xl lg:ml-48">
       <RevealOnScroll>
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
           <span className="text-white">{servicesContent.sectionLabel} </span>
@@ -34,32 +34,27 @@ export default function Services() {
   </div>
 </section>
       {/* ── Section 2: How we work ── */}
-      <section className="bg-[#0d1117]   -mt-16  sm:h-[800px] lg:h-[400px]  lg:py-4 sm:py-20 px-5 sm:px-10 lg:px-20">
-  <div className="max-w-6xl mx-auto">
+      <section className="bg-[hsl(222,47%,7%)] py-16 sm:py-20 lg:py-20 px-5 sm:px-10 lg:px-20">
+  <div className="max-w-6xl mx-auto lg:ml-42">
     {/* Heading */}
     <RevealOnScroll>
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-8 sm:mb-10">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-10 sm:mb-12 tracking-tight">
         How we work
       </h2>
     </RevealOnScroll>
 
     {/* Cards grid */}
-    <div className="grid grid-cols-1 sm:grid-rows-3 lg:grid-cols-3 gap-6 sm:gap-5">
+    <div className="grid grid-cols-1 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-6 sm:gap-5">
       {servicesContent.items.map((item, i) => (
         <RevealOnScroll key={item.href} delay={i * 0.1}>
-          <div className="bg-[#161b2e] border border-white/10 rounded-2xl p-6 sm:p-6 flex flex-col gap-4 h-full">
-            {/* Number badge */}
-            <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white text-base font-bold shrink-0">
+          <div className="bg-[hsl(222,45%,14%)] border border-white/10 rounded-2xl p-7 sm:p-7 flex flex-col gap-4 h-full">
+            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-sky-400 flex items-center justify-center text-white text-base font-bold shrink-0">
               {i + 1}
             </div>
-
-            {/* Step heading */}
-            <h3 className="text-white font-bold text-xl sm:text-lg leading-snug">
+            <h3 className="text-white font-bold text-xl sm:text-xl leading-snug">
               {item.headings}
             </h3>
-
-            {/* Step description */}
-            <p className="text-slate-400 text-base sm:text-sm leading-relaxed">
+            <p className="text-slate-400 text-base sm:text-[15px] leading-relaxed">
               {item.description}
             </p>
           </div>
@@ -68,6 +63,8 @@ export default function Services() {
     </div>
   </div>
 </section>
+
+
     </>
   );
 }

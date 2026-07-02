@@ -4,7 +4,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[hsl(222,47%,6%)] pt-10 pb-8">
+    <footer className="bg-[hsl(222,47%,6%)] pt-15 pb-11">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Top row: brand + nav */}
@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="inline-flex items-center mb-3">
-              <span className="font-bold text-2xl text-white">
+              <span className="font-base text-xl text-white">
                 Nex<span className="text-accent">loom</span>
               </span>
             </Link>

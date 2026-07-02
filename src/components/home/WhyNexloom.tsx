@@ -68,7 +68,7 @@ export default function WhyNexloom() {
     <>
       {/* ── About Nexloom / Problems we solve ───────────────────────── */}
       <SectionWrapper id="about" className="bg-[hsl(222,47%,11%)]">
-  <div className="max-w-6xl mx-auto flex flex-col gap-6">
+  <div className="max-w-6xl mx-auto flex flex-col gap-6 lg:ml-40">
 
     {/* Heading — now pulling from aboutLabel, matching the screenshot */}
     <RevealOnScroll>
@@ -98,13 +98,7 @@ export default function WhyNexloom() {
       </div>
     </RevealOnScroll>
 
-    {c.aboutCta && (
-      <RevealOnScroll delay={0.4}>
-        {/* <Button href={c.aboutCta.href} size="lg" arrow className="mt-2">
-          {c.aboutCta.label}
-        </Button> */}
-      </RevealOnScroll>
-    )}
+   
   </div>
 </SectionWrapper>
 
@@ -129,8 +123,8 @@ export default function WhyNexloom() {
       </SectionWrapper> */}
 
       {/* ── About (mission/approach) ───────────────────────────────────── */}
-      <SectionWrapper id="about-mission" className="bg-[hsl(222,47%,11%)] pb-6 lg:pb-10">
-        <div className="max-w-2xl mx-auto flex flex-col gap-6">
+      <SectionWrapper id="about-mission" className="bg-[hsl(222,47%,11%)] pb-6 lg:pb-10 ">
+        <div className="max-w-2xl  mx-auto flex flex-col gap-6 lg:ml-40">
           <RevealOnScroll>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
               {c.valuesLabel}
