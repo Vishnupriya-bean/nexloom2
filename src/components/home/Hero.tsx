@@ -69,11 +69,13 @@ export default function Hero() {
           {/* Headline */}
           <RevealOnScroll delay={0.1}>
             <h1 className="max-w-5xl mx-auto text-center font-bold tracking-[-0.05em] leading-[0.92] text-[#f5f7fb] mb-6">
-              <span className="block text-3xl sm:text-6xl md:text-7xl lg:text-[4.5rem]">
-                {heroContent.headline}
+              <span className="block text-3xl sm:text-6xl md:text-7xl lg:text-[3.5rem]">
+                Your business
+                <br />
+                outgrew its tools.
               </span>
 
-              <span className="block mt-2 text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem]">
+              <span className="block mt-2 text-5xl sm:text-6xl md:text-7xl lg:text-[2.5rem]">
                 <GradientText>{heroContent.headlineGradient}</GradientText>
               </span>
             </h1>

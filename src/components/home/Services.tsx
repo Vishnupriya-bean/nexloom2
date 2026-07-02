@@ -13,12 +13,31 @@ export default function Services() {
   <div className="max-w-[1400px] mx-auto">
     <div className="max-w-3xl lg:ml-48">
       <RevealOnScroll>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-          <span className="text-white">{servicesContent.sectionLabel} </span>
-          <span className="text-[#4da6ff]">"{servicesContent.heading}"</span>
-          <span className="text-white"> problem.</span>
-        </h2>
-      </RevealOnScroll>
+  <h2 className="font-extrabold tracking-tight leading-[1.08] text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl">
+    {/* Line 1 */}
+    <span className="block">
+      You don't have a
+    </span>
+
+    {/* Line 2 */}
+    <span className="block">
+      technology problem. You
+    </span>
+
+    {/* Line 3 */}
+    <span className="block">
+      have a{" "}
+      <span className="bg-gradient-to-r from-[#2d6cff] to-[#49c7ff] bg-clip-text text-transparent">
+        "no one owns this"
+      </span>
+    </span>
+
+    {/* Line 4 */}
+    <span className="block">
+      problem.
+    </span>
+  </h2>
+</RevealOnScroll>
 
       <RevealOnScroll delay={0.1}>
         <div className="mt-6 space-y-4">
@@ -35,7 +54,7 @@ export default function Services() {
 </section>
       {/* ── Section 2: How we work ── */}
       <section className="bg-[#0b1020] py-16 sm:py-20 lg:py-20 px-5 sm:px-10 lg:px-20">
-  <div className="max-w-6xl mx-auto lg:ml-42">
+  <div className="max-w-6xl mx-auto lg:ml-60">
     {/* Heading */}
     <RevealOnScroll>
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-10 sm:mb-12 tracking-tight">
