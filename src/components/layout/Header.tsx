@@ -63,7 +63,7 @@ export default function Header() {
 
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 group  ml-0 lg:ml-[95px]" onClick={() => setMobileOpen(false)}>
-              <span className="text-2xl font-extrabold text-white tracking-tight">
+              <span className="text-xl font-extrabold text-white tracking-tight">
                 Nex<span className="gradient-text">loom</span>
               </span>
             </Link>
@@ -84,7 +84,7 @@ export default function Header() {
 
               <Link
                 href="/book-a-call"
-                className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-cyan-400 hover:shadow-lg hover:shadow-blue-500/30 transition-all duration-300"
+               className="inline-flex items-center gap-2 rounded-lg px-4 py-3.5 text-[13px] font-semibold text-white bg-gradient-to-r from-blue-500 to-cyan-400 shadow-md hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300"
               >
                 Book a call
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
@@ -249,7 +249,7 @@ export default function Header() {
               {/* Drawer nav */}
               <div className="px-4 py-4 flex flex-col gap-1">
                 {/* Services accordion */}
-                <button
+                {/* <button
                   onClick={() => setMobileServicesOpen((v) => !v)}
                   className="flex items-center justify-between w-full px-4 py-3 text-sm font-medium text-white rounded-lg hover:bg-white/5 hover:text-accent transition-colors"
                   aria-expanded={mobileServicesOpen}
@@ -269,7 +269,7 @@ export default function Header() {
                   >
                     <path d="m6 9 6 6 6-6" />
                   </motion.svg>
-                </button>
+                </button> */}
 
                 <AnimatePresence initial={false}>
                   {mobileServicesOpen && (
@@ -285,7 +285,7 @@ export default function Header() {
                           key={col.href}
                           href={col.href}
                           onClick={() => setMobileOpen(false)}
-                          className="block px-4 py-2.5 text-sm font-medium text-white/70 hover:text-accent hover:bg-accent/10 rounded-lg transition-all duration-200"
+                          className="block px-4 py-2.5 text-sm font-medium text-white/70 hover:text-accent hover:bg-accent/10 rounded-md transition-all duration-200"
                         >
                           {col.category}
                         </Link>

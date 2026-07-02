@@ -40,7 +40,7 @@ export default function CTA() {
   const c = ctaContent;
 
   return (
-    <SectionWrapper className="bg-[hsl(222,47%,11%)] pt-6 lg:pt-10" id="contact">
+    <SectionWrapper className="bg-[#0b1020] pt-6 lg:pt-10" id="contact">
 
 
 
@@ -106,6 +106,8 @@ export default function CTA() {
           <span className="mx-2 opacity-50">·</span>
           {c.contactInfo.hours}
         </p>
+
+        
       </RevealOnScroll>
     )}
   </div>
