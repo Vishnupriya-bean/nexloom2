@@ -54,7 +54,7 @@ export default function Services() {
           {/* Heading */}
           <RevealOnScroll>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10 sm:mb-12 tracking-tight">
-              How we work
+              {servicesContent.sectionTitle}
             </h2>
           </RevealOnScroll>
 

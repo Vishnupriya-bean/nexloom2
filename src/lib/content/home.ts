@@ -2,7 +2,10 @@
 
 export const heroContent = {
   pill: "Technology advisor for established businesses",
-  headline: "Your business outgrew its tools.",
+ headline: {
+  line1: "Your business",
+  line2: "outgrew its tools.",
+},
   headlineGradient: "We fix that.",
   subtitle:"We help established small and mid-sized businesses untangle the software, automation, and systems slowing them down. A team that finds the real problem, decides the right move, and sees it through.",
 
@@ -25,6 +28,7 @@ export type ServiceItem = {
 }
 
 export const servicesContent = {
+   sectionTitle: "How we work",
   heading: {
   line1: "You don't have a",
   line2: "technology problem. You",
