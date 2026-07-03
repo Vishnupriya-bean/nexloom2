@@ -121,3 +121,9 @@ body {
   mask-composite: exclude;
   pointer-events: none;
 }
+
+@layer components {
+  .footer-link {
+    @apply text-[#AEB7C9] text-sm hover:text-white transition-colors;
+  }
+}

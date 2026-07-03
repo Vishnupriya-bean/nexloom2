@@ -28,16 +28,16 @@ export default function Footer() {
 
           {/* Nav links */}
           <nav className="flex items-center gap-8">
-            <Link href="/how-we-help" className="text-[#AEB7C9] text-sm hover:text-white transition-colors">
+            <Link href="/how-we-help" className="footer-link">
               How we help
             </Link>
-            <Link href="/about" className="text-[#AEB7C9] text-sm hover:text-white transition-colors">
+            <Link href="/about" className="footer-link">
               About
             </Link>
-            <Link href="/contact" className="text-[#AEB7C9] text-sm hover:text-white transition-colors">
+            <Link href="/contact" className="footer-link">
               Contact
             </Link>
-            <Link href="/book-a-call" className="text-[#AEB7C9] text-sm hover:text-white transition-colors">
+            <Link href="/book-a-call" className="footer-link">
               Book a call
             </Link>
           </nav>
