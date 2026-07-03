@@ -78,7 +78,7 @@ export default function CTA() {
 </div> */}
 
 
-<div className="w-full max-w-[1100px] mx-auto rounded-3xl border border-white/10 bg-[hsl(222,47%,14%)] px-6 sm:px-10 lg:px-10 py-12 sm:py-14 lg:py-8 min-h-[320px] sm:min-h-[440px] lg:min-h-[380px] lg:ml-39">
+<div className="w-full max-w-[1100px] mx-auto rounded-3xl border border-white/10 bg-[#10243F] px-6 sm:px-10 lg:px-10 py-12 sm:py-14 lg:py-8 min-h-[320px] sm:min-h-[440px] lg:min-h-[380px] lg:ml-39">
   <div className="flex flex-col items-start gap-5 w-full">
     <RevealOnScroll delay={0.1}>
       <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight max-w-2xl">
@@ -88,7 +88,7 @@ export default function CTA() {
     </RevealOnScroll>
 
     <RevealOnScroll delay={0.2}>
-      <p className="text-slate-300 text-base sm:text-lg leading-relaxed w-full max-w-none lg:text-sm">
+      <p className="text-white text-base sm:text-lg leading-relaxed w-full max-w-none lg:text-sm">
         {c.subheading}
       </p>
     </RevealOnScroll>
@@ -101,13 +101,13 @@ export default function CTA() {
 
     {c.contactInfo && (
       <RevealOnScroll delay={0.4}>
-        <p className="text-white text-base sm:text-lg mt-8">
+        <p className="text-white text-sm sm:text-base mt-8">
           {c.contactInfo.email}
           <span className="mx-2 opacity-50">·</span>
           {c.contactInfo.hours}
         </p>
 
-        
+
       </RevealOnScroll>
     )}
   </div>

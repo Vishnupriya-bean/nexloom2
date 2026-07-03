@@ -115,7 +115,7 @@ export default function Hero() {
           {/* Trusted companies */}
           <RevealOnScroll delay={0.5}>
             <div className="pt-0 sm:pt-0">
-              <p className="text-xs   tracking-[0.04em] text-blue-200/100 mb-4 sm:mb-5">
+              <p className="text-xs   tracking-[0.04em]  lg:mb-2 text-blue-200/100 mb-4 sm:mb-5">
                 {heroContent.trustedLabel}
               </p>
               {/* <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">

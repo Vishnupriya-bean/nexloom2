@@ -232,39 +232,47 @@ export default function WhyNexloom() {
       </section>
 
       {/* ── ABOUT SECTION ── */}
-      <section id="about" className="bg-[#0b1020] py-[88px]">
-        <div className="max-w-[1100px] lg:ml-58 mx-auto px-[28px]">
+     <section id="about" className="bg-[#0b1020] py-[96px]">
+  <div className="mx-auto max-w-[1280px] px-7 lg:px-10">
+    <div className="max-w-[670px] lg:ml-[94px]">
 
-          <div className="max-w-[62ch]">
+      <RevealOnScroll>
+        <h2 className="mb-[34px] text-[40px] font-bold leading-none tracking-[-0.04em] text-[#F5F7FB]">
+          About
+        </h2>
+      </RevealOnScroll>
 
-            {/* About Section Title matching explicit 38px formatting */}
-            <RevealOnScroll>
-              <h2 className="text-[38px] leading-[1.1] tracking-[-0.03em] font-[800] text-[#f5f7fb] mb-[20px]">
-                About
-              </h2>
-            </RevealOnScroll>
+      <RevealOnScroll delay={0.1}>
+        <div className="space-y-6">
 
-            <RevealOnScroll delay={0.1}>
-              <div className="flex flex-col gap-6">
+          <p className="max-w-[540px] text-[18px] font-normal leading-[1.5] text-[#AEB7C9]">
+            We help established businesses fix the technology getting in the
+            way of running them.
+          </p>
 
-                <p className="text-[16px] leading-[1.8] text-[#97a1b8]">
-                  We help established businesses fix the technology getting in the way of running them.
-                </p>
+          <p className="max-w-[540px] text-[18px] font-normal leading-[1.5] text-[#AEB7C9]">
+            We&apos;ve spent years building and untangling software systems,
+            and the pattern is almost always the same: the technology isn&apos;t
+            the hard part. The hard part is that no one owns the whole picture.
+            We work differently. We start with how the business actually runs,
+            find what&apos;s truly slowing it down, and decide the right move
+            with you before anything gets built. We&apos;d rather save you money
+            than sell you a project.
+          </p>
 
-                <p className="text-[16px] leading-[1.8] text-[#97a1b8]">
-                  We&apos;ve spent years building and untangling software systems, and the pattern is almost always the same: the technology isn&apos;t the hard part. The hard part is that no one owns the whole picture. We work differently. We start with how the business actually runs, find what&apos;s truly slowing it down, and decide the right move with you before anything gets built. We&apos;d rather save you money than sell you a project.
-                </p>
+          <p className="max-w-[540px] text-[18px] font-normal leading-[1.5] text-[#AEB7C9]">
+            Start with the &ldquo;why&rdquo; before the &ldquo;what.&rdquo;
+            Find the 20% of the problem causing 80% of the pain. Keep it simple
+            enough that your team actually uses it. No jargon, no theater, no
+            surprises.
+          </p>
 
-                <p className="text-[16px] leading-[1.8] text-[#97a1b8]">
-                  Start with the &ldquo;why&rdquo; before the &ldquo;what.&rdquo; Find the 20% of the problem causing 80% of the pain. Keep it simple enough that your team actually uses it. No jargon, no theater, no surprises.
-                </p>
-
-              </div>
-            </RevealOnScroll>
-
-          </div>
         </div>
-      </section>
+      </RevealOnScroll>
+
+    </div>
+  </div>
+</section>
 
     </div>
   );
