@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[hsl(222,47%,6%)] pt-15 pb-11">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1150px] mx-auto px-4 sm:px-6 lg:ml-58 lg:mr-[59px] lg:px-8">
 
         {/* Top row: brand + nav */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
@@ -17,23 +17,27 @@ export default function Footer() {
                 Nex<span className="text-accent">loom</span>
               </span>
             </Link>
-            <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
-              Technology advice for established businesses ready to fix what&apos;s slowing them down.
-            </p>
+            <p className="max-w-[330px] text-[14px] leading-[1.7] font-normal text-[#AEB7C9]">
+  Technology advice for established
+  <br />
+  businesses ready to fix what&apos;s slowing
+  <br />
+  them down.
+</p>
           </div>
 
           {/* Nav links */}
           <nav className="flex items-center gap-8">
-            <Link href="/how-we-help" className="text-slate-300 text-sm hover:text-accent transition-colors">
+            <Link href="/how-we-help" className="footer-link">
               How we help
             </Link>
-            <Link href="/about" className="text-slate-300 text-sm hover:text-accent transition-colors">
+            <Link href="/about" className="footer-link">
               About
             </Link>
-            <Link href="/contact" className="text-slate-300 text-sm hover:text-accent transition-colors">
+            <Link href="/contact" className="footer-link">
               Contact
             </Link>
-            <Link href="/book-a-call" className="text-slate-300 text-sm hover:text-accent transition-colors">
+            <Link href="/book-a-call" className="footer-link">
               Book a call
             </Link>
           </nav>

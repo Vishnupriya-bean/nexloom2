@@ -68,25 +68,31 @@ export default function Hero() {
 
           {/* Headline */}
           <RevealOnScroll delay={0.1}>
-            <h1 className="max-w-5xl mx-auto text-center font-bold tracking-[-0.05em] leading-[0.92] text-[#f5f7fb] mb-6">
-              <span className="block text-3xl sm:text-6xl md:text-7xl lg:text-[3.5rem]">
-                Your business
-                <br />
-                outgrew its tools.
-              </span>
+            <h1 className="max-w-5xl mx-auto text-center font-extrabold tracking-[-0.05em] leading-[1.92] text-[#f5f7fb] mb-6">
+             <span className="block text-3xl sm:text-6xl md:text-7xl lg:text-[3.5rem]">
+  {heroContent.headline.line1}
+  <br />
+  {heroContent.headline.line2}
+</span>
 
-              <span className="block mt-2 text-5xl sm:text-6xl md:text-7xl lg:text-[2.5rem]">
+              <span className="block mt-2 text-5xl sm:text-6xl md:text-7xl lg:text-[3.5rem]">
                 <GradientText>{heroContent.headlineGradient}</GradientText>
               </span>
             </h1>
           </RevealOnScroll>
 
           {/* Subtitle */}
-          <RevealOnScroll delay={0.2}>
+          {/* <RevealOnScroll delay={0.2}>
             <p className="mx-auto max-w-[740px] px-2 sm:px-0 mb-8 sm:mb-10 text-center text-base sm:text-lg lg:text-xl leading-[1.6] text-sky-50">
               {heroContent.subtitle}
             </p>
-          </RevealOnScroll>
+          </RevealOnScroll> */}
+
+          <RevealOnScroll delay={0.2}>
+  <p className="mx-auto max-w-[635px] text-center mb-10 text-[18px] md:text-[18.5px] font-normal leading-[1.8] text-[#B3BCCB]">
+    {heroContent.subtitle}
+  </p>
+</RevealOnScroll>
 
 
 
@@ -109,7 +115,7 @@ export default function Hero() {
           {/* Trusted companies */}
           <RevealOnScroll delay={0.5}>
             <div className="pt-0 sm:pt-0">
-              <p className="text-xs   tracking-[0.04em] text-blue-200/100 mb-4 sm:mb-5">
+              <p className="text-xs   tracking-[0.04em]  lg:mb-2 text-blue-200/100 mb-4 sm:mb-5">
                 {heroContent.trustedLabel}
               </p>
               {/* <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">

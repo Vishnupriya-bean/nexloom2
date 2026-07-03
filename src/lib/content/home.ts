@@ -2,7 +2,10 @@
 
 export const heroContent = {
   pill: "Technology advisor for established businesses",
-  headline: "Your business outgrew its tools.",
+ headline: {
+  line1: "Your business",
+  line2: "outgrew its tools.",
+},
   headlineGradient: "We fix that.",
   subtitle:"We help established small and mid-sized businesses untangle the software, automation, and systems slowing them down. A team that finds the real problem, decides the right move, and sees it through.",
 
@@ -25,8 +28,14 @@ export type ServiceItem = {
 }
 
 export const servicesContent = {
-  sectionLabel: "You don't have a technology problem. You have a",
-  heading: "no one owns this problem",
+   sectionTitle: "How we work",
+  heading: {
+  line1: "You don't have a",
+  line2: "technology problem. You",
+  line3Prefix: "have a ",
+  line3Highlight: '"no one owns this"',
+  line4: "problem.",
+},
   subheading1:
     "The same data gets typed into three systems. Orders, invoices, and scheduling held together by spreadsheets and the one person who remembers how it works. Software you pay for every month and barely use. A growing list of we should fix that, with no one to actually own it It builds quietly, and it taxes everything: time, money, and the patience of good people.",
   subheading2:"It builds quietly, and it taxes everything: time, money, and the patience of good people.",
@@ -110,11 +119,27 @@ export const whyNexloomContent = {
   aboutText:
     "We're building this practice deliberately and taking on a small number of clients. Here's the kind of work we take on:",
   capabilities: [
-    "A team re-keying the same orders into three systems, hours a week, with errors creeping in.",
-    "A business paying for five tools that don't talk to each other, and a sixth nobody uses.",
-    "Reporting that takes two days to assemble by hand and is out of date by the time it lands.",
-    "A manual process that worked at ten customers and is breaking at a hundred.",
-  ],
+  {
+    prefix: "A team ",
+    highlight: "re-keying the same orders into three systems",
+    suffix: ", hours a week, with errors creeping in.",
+  },
+  {
+    prefix: "A business ",
+    highlight: "paying for five tools that don't talk to each other",
+    suffix: ", and a sixth nobody uses.",
+  },
+  {
+    prefix: "",
+    highlight: "Reporting that takes two days to assemble by hand",
+    suffix: " and is out of date by the time it lands.",
+  },
+  {
+    prefix: "",
+    highlight: "A manual process that worked at ten customers",
+    suffix: " and is breaking at a hundred.",
+  },
+],
   aboutCta: { label: "Learn More About Us", href: "/about" },
 
   valuesLabel: "About",
