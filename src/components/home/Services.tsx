@@ -50,7 +50,7 @@ export default function Services() {
       </section>
       {/* ── Section 2: How we work ── */}
       <section className="bg-[#0a0e1a] py-16 sm:py-20 px-5 sm:px-10 lg:px-20">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl  lg:ml-45 mx-auto">
           {/* Heading */}
           <RevealOnScroll>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10 sm:mb-12 tracking-tight">
