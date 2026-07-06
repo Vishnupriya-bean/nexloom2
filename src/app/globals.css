@@ -126,4 +126,112 @@ body {
   .footer-link {
     @apply text-[#AEB7C9] text-sm hover:text-white transition-colors;
   }
+   .section-description {
+    @apply text-slate-400 text-sm sm:text-base lg:text-lg leading-relaxed;
+  }
+   .section-container {
+    @apply w-full max-w-[1100px] mx-auto px-6 sm:px-10 lg:px-10;
+  }
+
+   .section-heading {
+    @apply font-extrabold tracking-tight leading-[1.08] text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl font-extrabold text-white mb-10 sm:mb-12 tracking-tight;
+  }
+
+
+.hero-section {
+  @apply relative overflow-hidden flex items-center bg-[#0b1020];
+  min-height: 750px;
+}
+
+.hero-container {
+   @apply relative w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8
+         pt-20 sm:pt-28 lg:pt-36
+         pb-8 sm:pb-10 lg:pb-12;
+}
+
+.hero-content {
+  @apply max-w-3xl mx-auto text-center;
+}
+
+.hero-pill-wrapper {
+  @apply inline-block mb-6 sm:mb-8;
+}
+
+.hero-pill {
+  @apply inline-flex items-center rounded-full border border-white/10 bg-[#0a0f1e] px-3 py-4;
+}
+
+.hero-pill-text {
+  @apply text-xs font-semibold uppercase tracking-[0.15em] text-white/70;
+}
+
+.hero-heading {
+  @apply max-w-5xl mx-auto text-center font-extrabold tracking-[-0.05em] text-[#f5f7fb] mb-6;
+  line-height: 1.92;
+}
+
+.hero-heading-top {
+  @apply block text-3xl sm:text-6xl md:text-7xl lg:text-[3.5rem];
+}
+
+.hero-heading-gradient {
+  @apply block mt-2 text-5xl sm:text-6xl md:text-7xl lg:text-[3.5rem];
+}
+
+.hero-subtitle {
+  @apply mx-auto max-w-[635px] text-center mb-10 font-normal text-[#B3BCCB];
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 18.5px;
+  }
+}
+
+.hero-buttons {
+  @apply flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-[25px];
+}
+
+.hero-trusted {
+  @apply pt-0;
+}
+
+.hero-trusted-text {
+  @apply text-xs tracking-[0.04em] text-blue-200 mb-4 sm:mb-5 lg:mb-2;
+}
+
+.section-title-large {
+  @apply text-[39px] leading-[1.1] tracking-[-0.03em] font-extrabold text-[#F5F7FB] max-w-[22ch];
+}
+
+.section-intro {
+  @apply mt-[18px] text-[15px] leading-[1.65] text-[#97A1B8] italic max-w-full;
+}
+
+.problem-item {
+  @apply flex gap-[14px] items-start text-[15px] leading-[1.75] text-[#97A1B8];
+}
+
+.problem-dot {
+  @apply flex-none w-[9px] h-[9px] rounded-full mt-[9px] bg-gradient-to-br from-[#2b6cf6] to-[#35c7ef];
+}
+
+.problem-highlight {
+  @apply text-[#F5F7FB] font-semibold;
+}
+
+.about-title {
+  @apply mb-[34px] text-[40px] font-bold leading-none tracking-[-0.04em] text-[#F5F7FB];
+}
+
+.about-description {
+  @apply max-w-[540px] text-[18px] font-normal leading-[1.5] text-[#AEB7C9];
+}
+
 }
