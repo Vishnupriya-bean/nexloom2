@@ -3,7 +3,7 @@ import { ctaContent, siteConfig } from "@/data/content";
 
 export default function CTA() {
   return (
-    <section id="contact" className="cta">
+    <section id="contact">
       <div className="wrap">
         <div className="cta-inner">
           <h2>
