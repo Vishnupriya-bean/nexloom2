@@ -1,12 +1,18 @@
+"use client";
+
 import Header from "./Header";
 import Footer from "./Footer";
+import { usePathname } from "next/navigation";
 
 export default function RootShell({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const isBookACall = pathname === "/book-a-call";
+
   return (
     <>
-      <Header />
+      {!isBookACall && <Header />}
       <main>{children}</main>
-      <Footer />
+      {!isBookACall && <Footer />}
     </>
   );
 }
