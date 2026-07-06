@@ -77,5 +77,5 @@ export const ctaContent = {
   titleGradient: "slowing you down.",
   description: "A short call, no pitch. Bring your most annoying technology problem. We'll tell you what we'd look at first, whether we're the right fit, and what it would take.",
   buttonText: "Book a call →",
-  contactLine: "info@nexloom.co  ·  Mon–Fri, 9am–6pm PT"
+  contactLine: "info@nexloom.co \u00A0·\u00A0 Mon–Fri, 9am–6pm PT"
 };
