@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[hsl(222,47%,6%)] pt-15 pb-11">
-      <div className="max-w-[1150px] mx-auto px-4 sm:px-6 lg:ml-58 lg:mr-[59px] lg:px-8">
+      <div className="w-full max-w-[1100px] mx-auto px-6 sm:px-10 lg:px-10">
 
         {/* Top row: brand + nav */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-10">
@@ -18,12 +18,12 @@ export default function Footer() {
               </span>
             </Link>
             <p className="max-w-[330px] text-[14px] leading-[1.7] font-normal text-[#AEB7C9]">
-  Technology advice for established
-  <br />
-  businesses ready to fix what&apos;s slowing
-  <br />
-  them down.
-</p>
+              Technology advice for established
+              <br />
+              businesses ready to fix what&apos;s slowing
+              <br />
+              them down.
+            </p>
           </div>
 
           {/* Nav links */}

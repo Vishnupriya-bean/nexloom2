@@ -9,11 +9,12 @@ export default function Services() {
   return (
     <>
       {/* ── Section 1: Problem statement ── */}
-      <section className="bg-[#0e1530]    sm:py-6 lg:py-25 sg:py-6 px-4  sm:px-3 lg:px-2">
-        <div className="max-w-[1400px] mx-auto">
-          <div className="max-w-3xl lg:ml-48">
+      <section className="bg-[#0e1530] pt-12 pb-20 lg:pt-16 lg:pb-24 px-4 sm:px-6 lg:px-8">
+  <div className="section-container">
+    <div className="max-w-3xl">
+
             <RevealOnScroll>
-              <h2 className="font-extrabold tracking-tight leading-[1.08] text-white text-2xl sm:text-3xl md:text-4xl lg:text-4xl">
+              <h2 className="section-heading">
                 <span className="block">
                   {servicesContent.heading.line1}
                 </span>
@@ -37,47 +38,49 @@ export default function Services() {
 
             <RevealOnScroll delay={0.1}>
               <div className="mt-6 space-y-4">
-                <p className="text-slate-400 text-sm sm:text-base lg:text-lg leading-relaxed">
+                <p className="section-description">
                   {servicesContent.subheading1}
                 </p>
-                <p className="text-slate-400 text-sm sm:text-base lg:text-lg leading-relaxed">
+                <p className="section-description">
                   {servicesContent.subheading2}
                 </p>
-              </div>
+              </div>c
             </RevealOnScroll>
           </div>
         </div>
       </section>
       {/* ── Section 2: How we work ── */}
-      <section className="bg-[#0a0e1a] py-16 sm:py-20 px-5 sm:px-10 lg:px-20">
-        <div className="max-w-6xl  lg:ml-45 mx-auto">
-          {/* Heading */}
-          <RevealOnScroll>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-10 sm:mb-12 tracking-tight">
-              {servicesContent.sectionTitle}
-            </h2>
-          </RevealOnScroll>
+      <section className="bg-[#0a0e1a] py-20 lg:py-24">
+  <div className="section-container">
 
-          {/* Cards grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {servicesContent.items.map((item, i) => (
-              <RevealOnScroll key={item.href} delay={i * 0.1}>
-                <div className="bg-[#131c34] border border-white/10 rounded-2xl p-7 flex flex-col gap-4 h-full min-h-[290px]">
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-sky-400 flex items-center justify-center text-white text-base font-bold shrink-0">
-                    {i + 1}
-                  </div>
-                  <h3 className="text-white font-bold text-xl leading-snug">
-                    {item.headings}
-                  </h3>
-                  <p className="text-slate-400 text-[15px] leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </RevealOnScroll>
-            ))}
+    <RevealOnScroll>
+      <h2 className="section-title">
+        {servicesContent.sectionTitle}
+      </h2>
+    </RevealOnScroll>
+
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      {servicesContent.items.map((item, i) => (
+        <RevealOnScroll key={item.href} delay={i * 0.1}>
+          <div className="bg-[#131c34] border border-white/10 rounded-2xl p-7 flex flex-col gap-4 h-full min-h-[290px]">
+            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-blue-500 to-sky-400 flex items-center justify-center text-white text-base font-bold shrink-0">
+              {i + 1}
+            </div>
+
+            <h3 className="text-white font-bold text-xl leading-snug">
+              {item.headings}
+            </h3>
+
+            <p className="text-slate-400 text-[15px] leading-relaxed">
+              {item.description}
+            </p>
           </div>
-        </div>
-      </section>
+        </RevealOnScroll>
+      ))}
+    </div>
+
+  </div>
+</section>
 
     </>
   );

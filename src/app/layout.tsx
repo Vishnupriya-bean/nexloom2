@@ -25,6 +25,30 @@ export const metadata: Metadata = {
     ],
     apple: "/favicon.svg",
   },
+
+  openGraph: {
+    title: "Nexloom | We Build Software That Ships",
+    description:
+      "Senior-led software engineering consultancy specialising in product engineering, cloud DevOps, AI automation, and integrations.",
+    url: "https://nexloom.co",
+    siteName: "Nexloom",
+    images: [
+      {
+        url: "/favicon.svg",
+        width: 1230,
+        height: 630,
+        alt: "Nexloom Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nexloom | We Build Software That Ships",
+    description:
+      "Senior-led software engineering consultancy specialising in product engineering, cloud DevOps, AI automation, and integrations.",
+    images: ["/favicon.svg"],
+  },
 };
 
 export default function RootLayout({
