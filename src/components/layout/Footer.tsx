@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { siteConfig } from "@/data/content";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const [activeModal, setActiveModal] = useState<"privacy" | "terms" | null>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -41,12 +43,15 @@ export default function Footer() {
               <p style={{ marginTop: "14px", maxWidth: "34ch" }}>{siteConfig.footerText}</p>
             </div>
             <div className="ft-links">
-              {siteConfig.navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
-                  {link.label}
-                </Link>
-              ))}
-              <Link href={siteConfig.bookingUrl}>Book a call</Link>
+              {siteConfig.navLinks.map((link) => {
+                if (pathname === "/book-a-call" && link.label === "Contact") return null;
+                return (
+                  <Link key={link.href} href={link.href}>
+                    {link.label}
+                  </Link>
+                );
+              })}
+              <Link href={siteConfig.bookingUrl} target="_blank" rel="noopener">Book a call</Link>
             </div>
           </div>
           <div className="ft-bottom">
