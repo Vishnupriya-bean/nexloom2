@@ -4,9 +4,9 @@ export const siteConfig = {
   contactEmail: "info@nexloom.co",
   bookingUrl: "/book-a-call",
   navLinks: [
-    { label: "How we help", href: "#how" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "How we help", href: "/#how" },
+    { label: "About", href: "/#about" },
+    { label: "Contact", href: "/#contact" },
   ],
   footerText: "Technology advice for established businesses ready to fix what's slowing them down.",
   copyright: "© 2026 Nexloom. All rights reserved.",
